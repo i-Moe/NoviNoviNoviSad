@@ -22,6 +22,7 @@ img {
     max-width: 100%;
 }
 
+
 a, a:hover, a:active {
     outline: 0px !important;
 	text-decoration:none;
@@ -102,20 +103,27 @@ top: 64%;
 }
 .carousel-indicators li { 
   background-color: rgba(0,0,0,0);
-  border: 1px solid #FEE16F;
+  border: 1px solid #fff;
   border-radius: 0;
 }
 .carousel-indicators .active { 
-  background-color: #FEE16F;
+  background-color: #fff;
 }
 .caption h2{
-color:#FFE270;
+color:#fff;
 line-height:45px;
 font-size: 50px;
 }
 .caption strong { 
   font-size: 26px;
 }
+
+/*.topPhoto {
+    width: 1920px;
+    height: 800px;
+    object-fit: cover;
+}
+*/
 
 /* Common style */
 .grid figure {
@@ -404,7 +412,7 @@ p {
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #FEE16F;
+    color: #93b782;
     background-color: transparent;
     border-radius: 4px;
 }
@@ -1172,6 +1180,11 @@ transition: all .3s;
     background: #fff;
 }
 
+#news {
+    padding: 60px 0;
+    background: #fff;
+}
+
 /* Contact
 ---------------------------------*/
 .page_section.contact {
@@ -1360,7 +1373,7 @@ transition: all .3s;
     width: 175px;
     height: 50px;
     letter-spacing: 0px;
-    background: #FED93E;
+    background: #93b782;
     border-radius: 3px;
     color: #000000;
     font-size: 16px;
@@ -1398,7 +1411,7 @@ transition: all .3s;
 
 .footer_bottom span a {
     display: inline-block;
-    color: #FDD83D;
+    color: #93b782;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -2326,7 +2339,43 @@ div.mc-image {
 .news-content .news-media.gallery{
     box-shadow:4px 4px 0 #bbb,8px 8px 0 #ddd;
 }
-                               
+ 
+/* additional timeline↓ */
+.timeline-with-icons {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+  }
+  
+  .timeline-with-icons .timeline-item {
+    position: relative;
+  }
+  
+  .timeline-with-icons .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -48px;
+    background-color: hsl(217, 88.2%, 90%);
+    color: hsl(217, 88.8%, 35.1%);
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/*additional timeline↑*/
+
+
+
+
+
 /*
    Media Queries
 --------------------------- */
